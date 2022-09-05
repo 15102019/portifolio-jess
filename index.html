@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Jéssica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagem/mtitecnologia-ciencia-de-dados-1.jpg" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="title">
+                <h1>Estudante</h1>
+                <h2>Ciências de dados e</h2>
+                <h3>Ciências Contábeis</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>Eu sou estudante de Ciências de dados e Ciências Contábeis pela UNINTER.</h1>
+                <p>Olá, meu nome é Jéssica, tenho 24 anos, uma filha chamada Jade de 3 anos. Gosto muito de praticar exercícios físicos,principalmente musculação. Levo uma vida saudável e leve.Gosto de estudar e estar sempre aprimorar meus conhecimentos com cursos. Amo estar com a família.</p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="port">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="imagem/download.jpg " alt="">
+                    <h1>Formação Acadêmica</h1>
+                    <p> Técnico em Logística<p>
+                        <br>Cursando Ciência de dados e Ciências Contábeis
+                        
+                    </p>
+                    <button>Experiências profissionais</button>
+                </label>
+
+                <label class="card" for="item-2" id="song-2">
+                    <img src="imagem/download (1).jpg" alt="">
+                    <h1>Cursos</h1>
+                    <p> Diploma em Iglês<p>
+                        <br>Curso básico em informática
+
+                    </p>
+                    <button>Cursos</button>
+                </label>
+
+                <label class="card" for="item-3" id="song-3">
+                    <img src="imagem/images.jpg" alt="">
+                    <h1>Experiências profissionais</h1>
+                    <p>CSN Siderúrgica S.A.<p>
+                        <br> Processos Administrativos
+
+                    </p>
+                    <button>Experiências</button>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-contact">
+                <div class="contact-left">
+                    <h1>Meu Contato</h1>
+                    <div class="linha"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>milagresjessica2@gmail.com</span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>31 987715188</span>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Ipatinga, Minas Gerais</span>
+                </div>
+                <div class="contact-right">
+                    <h1>Fale comigo :</h1>
+                    <div class="linha"></div>
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Nome">
+                    <textarea placeholder="Menssagem"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html>
